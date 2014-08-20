@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+ 
+	const int NUM_PESSOAS = 10, TERCEIRA_IDADE = 65;
+
+	int quantidade = 0, idade;
+	
+	for(int i=0; i<NUM_PESSOAS; i = i+1){
+		cin >> idade;
+		if (idade >= TERCEIRA_IDADE){
+			quantidade = quantidade + 1;
+		}
+	}
+	cout << "ha " << quantidade << " pessoas na terceira idade\n";
+	
+	cout << "\ndigite algo para terminar... " ; 
+	string seguratela; cin >> seguratela;
+	return 0;
+}
