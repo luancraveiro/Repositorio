@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+	const int NUMERO_ALUNOS = 4; // 170 ;
+	int notasAcimaMedia = 0;
+	float nota, media, soma = 0.0;
+	
+  	for(int i=1;i<=NUMERO_ALUNOS;i++){
+		cout << "nota ?";
+		cin >> nota;
+      	soma = soma + nota;
+  	}
+	media = soma/NUMERO_ALUNOS;
+	cout << "media da turma eh "<< media << endl;
+  	for(int i=1;i<=NUMERO_ALUNOS;i++){
+		cout << "nota ?";
+		cin >> nota; 
+
+	   	if (nota > media) {
+			notasAcimaMedia = notasAcimaMedia + 1;
+		} 
+	}
+	cout << "Ha " << notasAcimaMedia << " notas acima da media " << endl;
+	string seguratela; cin >> seguratela;
+}
