@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+	float N1, N2, media;
+	
+	cout << "digite duas notas para o calculo de media \n(o programa termina quando uma delas for negativa)"<< endl;
+	do {
+		cout << "N1 ?";
+		cin >> N1;
+		cout << "N2 ?";
+		cin >> N2;
+		media = (N1+N2)/2.0;
+		cout << "media =" << media  << endl; 
+	} while (N1 >= 0.0 && N2 >= 0.0);
+	
+	// codigo para segurar a tela se precisar...
+	cout << "\ndigite algo para terminar... ";
+	string seguratela; cin >> seguratela;
+	return 0;
+}
