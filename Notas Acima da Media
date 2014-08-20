@@ -1,22 +1,21 @@
 #include <iostream>
 using namespace std;
 int main(){
-	const int NUMERO_ALUNOS = 4; // 170 ;
+	const int NUMERO_ALUNOS = 4;
 	int notasAcimaMedia = 0;
-	float nota, media, soma = 0.0;
+	float media, soma = 0.0;
+	float notas[NUMERO_ALUNOS];
 	
   	for(int i=1;i<=NUMERO_ALUNOS;i++){
 		cout << "nota ?";
-		cin >> nota;
-      	soma = soma + nota;
+		cin >> notas[i-1]; // começa de zero
+      	soma = soma + notas[i-1];
   	}
 	media = soma/NUMERO_ALUNOS;
 	cout << "media da turma eh "<< media << endl;
   	for(int i=1;i<=NUMERO_ALUNOS;i++){
-		cout << "nota ?";
-		cin >> nota; 
 
-	   	if (nota > media) {
+	   	if (notas[i-1] > media) {
 			notasAcimaMedia = notasAcimaMedia + 1;
 		} 
 	}
