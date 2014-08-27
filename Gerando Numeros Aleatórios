@@ -1,0 +1,25 @@
+#include <iostream>
+#include <ctime>	// include adicional para poder usar aleatorios
+#include <cstdlib> 	// include adicional
+using namespace std;
+int main() {
+
+	srand ( time(NULL) );
+
+	const int TAM_VETOR = 10; 
+	int vetor[TAM_VETOR];
+	for(int i=0;i<TAM_VETOR;i++){
+
+		int numAleatorio = rand( ) % 300;	
+
+		vetor[i] = numAleatorio;
+	}	
+	cout << "\nimpressao dos menores que  100 \n";
+	for(int i=0;i<TAM_VETOR;i++){	
+		if (vetor [i] < 100 ){
+			cout << "indice i = " << i << "  vetor nesta posicao = " << vetor [i]  << endl;
+		}
+	}			
+	cout << "\ndigite algo para terminar... " ; 	string x; cin >> x;
+	return 0;
+}
