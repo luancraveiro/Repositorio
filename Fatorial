@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	int num, fat = 1;
 	
-	cout << "Entre com um numero" ; 
+	cout << "Entre com um numero menor que 32" ; 
 	cin >> num;
 	
 	// nao use num > 31
