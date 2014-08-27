@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int num, fat = 1;
+	cin >> num;
+	// nao use num > 31
+	for(int i=1; i <= num && i<32; i++){
+		fat = fat*i;
+	}
+	cout << "fatorial = " << fat;
+	cout << "\ndigite algo para terminar... " ; 
+	string seguratela; cin >> seguratela;
+	return 0;
+}
