@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+	const int TAM_VETOR = 3; 
+	
+	int vetA[TAM_VETOR], vetB[TAM_VETOR], vetorSoma[TAM_VETOR];
+	cout << "digite os valores dos vetores \na serem somados " << endl ;
+	for(int i=0;i<TAM_VETOR;i++){	
+		cout << "vetA[" << i << "] = ";
+		cin >> vetA[i] ;
+		cout << "vetB[" << i << "] = ";
+		cin >> vetB[i] ;
+	}	
+
+	cout << "\nimpressao das "<< TAM_VETOR << " somas\n";
+	for(int i=0;i<TAM_VETOR;i++){	
+		vetorSoma[i] = vetA[i] + vetB[i];
+		cout << "vSoma[" << i << "] = " ;
+		cout <<  vetorSoma[i] << endl;
+	}			
+
+	return 0;
+}
