@@ -19,6 +19,11 @@ int main() {
 		cout << "vSoma[" << i << "] = " ;
 		cout <<  vetorSoma[i] << endl;
 	}			
+	
+	
+	cout << "\ndigite algo para terminar... " ; 
+	string seguratela; cin >> seguratela;
+
 
 	return 0;
 }
